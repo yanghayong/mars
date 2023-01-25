@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+:root {
+  --primary: #222;
+  --accent: #fd7272;
+  --dark: #4b4b4b;
+  --mid: #808080;
+  --light: #e0e0e0;
+}
+
+body {
+  color: var(--primary);
+  line-height: 1.5;
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Days One', sans-serif; */
+}
+
+.section {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.nav {
+  display: flex;
+  gap: 80px;
+  font-size: 14px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-left: 80px;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: var(--primary);
+}
+
+/* button */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: block;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.red {
+  background-color: var(--accent);
+}
+
+.green {
+  background-color: #38ada9;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
