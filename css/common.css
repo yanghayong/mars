@@ -10,15 +10,8 @@
 
 body {
   color: var(--primary);
-  line-height: 1.5;
   font-family: 'Noto Sans KR', sans-serif;
   /* font-family: 'Days One', sans-serif; */
-}
-
-.section {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 /* header */

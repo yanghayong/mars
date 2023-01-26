@@ -40,15 +40,97 @@
 .slide_text h4 {
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .slide_text p {
   width: 640px;
-  margin: 10px 0 66px;
+  margin: 20px 0 70px;
+  line-height: 1.5;
 }
 
 .arrows {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.arrows img {
+  opacity: 0.6;
+}
+
+/* slide_02 */
+.slide_02 .item {
+  position: relative;
+}
+
+.slide_02 .item .profile {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.slide_02 .item .profile .detail h5 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.slide_02 .item .profile .detail p {
+  font-size: 14px;
+}
+
+/* section */
+.section {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.section .title_box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section .title_box h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.section .title_box p {
+  color: var(--dark);
+}
+
+/* earth */
+.earth .title_box span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  color: var(--mid);
+}
+
+.earth .title_box span i {
+  padding-left: 10px;
+}
+
+.earth .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.earth .cards img {
+  width: 100%;
+  display: block;
 }
