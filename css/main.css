@@ -14,13 +14,13 @@
 }
 
 .slide_01 .item.item_01 {
-  background-image: url('../images/slide_01.jpg');
+  background-image: url("../images/slide_01.jpg");
 }
 .slide_01 .item.item_02 {
-  background-image: url('../images/slide_02.jpg');
+  background-image: url("../images/slide_02.jpg");
 }
 .slide_01 .item.item_03 {
-  background-image: url('../images/slide_03.jpg');
+  background-image: url("../images/slide_03.jpg");
 }
 
 .slide_text {
@@ -33,7 +33,7 @@
 }
 
 .slide_text h2 {
-  font-family: 'Days One', sans-serif;
+  font-family: "Days One", sans-serif;
   font-size: 96px;
 }
 
@@ -91,7 +91,7 @@
 
 /* section */
 .section {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   margin-top: 80px;
@@ -134,3 +134,68 @@
   width: 100%;
   display: block;
 }
+
+/* space */
+.space .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.space .cards li {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.space .cards li img {
+  width: 100%;
+  display: block;
+}
+
+.space .cards li:nth-child(3) {
+  grid-column: 3 / 5;
+}
+
+.space .cards li:nth-child(4) {
+  grid-column: 1 / 3;
+}
+
+.space .cards li h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.3s;
+}
+
+.space .cards li i {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  transition: top 0.3s;
+}
+
+.space .cards li:hover h5 {
+  top: -20px;
+}
+
+.space .cards li:hover i {
+  top: 50%;
+}
+
+.space .cards li:hover img {
+  filter: brightness(50%);
+}
+
+/* map */
+.map {
+  width: 100% !important;
+}
+
+/* insta */

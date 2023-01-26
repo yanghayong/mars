@@ -148,17 +148,99 @@
       </div>
 
       <!-- space -->
-      <div class="section"></div>
+      <div class="section space">
+        <div class="title_box">
+          <h3>우주! 어디까지 알고 있니?</h3>
+          <p>
+            인생에 사는가 끝에 방황하여도, 때까지 방황하였으며, 바로
+            이것이야말로 봄바람이다.
+          </p>
+        </div>
+        <ul class="cards">
+          <li>
+            <img src="./images/space_01.jpg" alt="" />
+            <h5>Jupiter</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="./images/space_02.jpg" alt="" />
+            <h5>Jupiter</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="./images/space_03.jpg" alt="" />
+            <h5>Jupiter</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="./images/space_04.jpg" alt="" />
+            <h5>Jupiter</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="./images/space_05.jpg" alt="" />
+            <h5>Jupiter</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+          <li>
+            <img src="./images/space_06.jpg" alt="" />
+            <h5>Jupiter</h5>
+            <i class="xi-zoom-in"></i>
+          </li>
+        </ul>
+      </div>
 
       <!-- map -->
-      <div class="section"></div>
-      <div class="map"></div>
+      <div class="section">
+        <div class="title_box">
+          <h3>오시는 길</h3>
+          <p>우주로 가는 길은 당신과 아주 가까운 곳에 있습니다.</p>
+        </div>
+      </div>
+      <div
+        id="daumRoughmapContainer1674697189421"
+        class="root_daum_roughmap root_daum_roughmap_landing map"
+      ></div>
 
       <!-- insta -->
-      <div class="section"></div>
+      <div class="section insta">
+        <div class="title_box">
+          <h3><i class="xi-instagram"></i> Instagram</h3>
+          <span>daily life on Mars</span>
+        </div>
+        <ul class="cards">
+          <li><img src="./images/insta_01.png" alt="" /></li>
+          <li><img src="./images/insta_02.png" alt="" /></li>
+          <li><img src="./images/insta_03.png" alt="" /></li>
+          <li><img src="./images/insta_04.png" alt="" /></li>
+          <li><img src="./images/insta_05.png" alt="" /></li>
+          <li><img src="./images/insta_06.png" alt="" /></li>
+          <li><img src="./images/insta_07.png" alt="" /></li>
+          <li><img src="./images/insta_08.png" alt="" /></li>
+          <li><img src="./images/insta_09.png" alt="" /></li>
+          <li><img src="./images/insta_10.png" alt="" /></li>
+          <li><img src="./images/insta_11.png" alt="" /></li>
+          <li><img src="./images/insta_12.png" alt="" /></li>
+        </ul>
+      </div>
 
       <!-- footer -->
       <div class="footer"></div>
     </div>
+
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+
+    <script charset="UTF-8">
+      new daum.roughmap.Lander({
+        timestamp: "1674697189421",
+        key: "2diky",
+        mapWidth: "640",
+        mapHeight: "450",
+      }).render()
+    </script>
   </body>
 </html>
