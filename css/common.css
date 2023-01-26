@@ -77,3 +77,59 @@ body {
   background-color: transparent;
   border: 1px solid #fff;
 }
+
+.footer {
+  margin-top: 130px;
+  background-color: #f5f5f5;
+  font-size: 13px;
+}
+
+.footer .section {
+  padding: 40px 0 54px;
+}
+
+.bottom_header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.bottom_logo {
+  margin-right: 160px;
+}
+
+.bottom_nav {
+  display: flex;
+  color: var(--dark);
+}
+
+.bottom_nav li a {
+  display: block;
+  padding: 0 14px;
+  border-right: 1px solid var(--dark);
+}
+
+.bottom_nav li:last-child a {
+  border: none;
+}
+
+.sns {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  font-size: 20px;
+  color: var(--mid);
+  display: flex;
+  gap: 20px;
+}
+
+.site_info {
+  line-height: 2;
+  color: var(--dark);
+  margin-bottom: 26px;
+}
+
+.copyright {
+  color: var(--mid);
+}

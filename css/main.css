@@ -14,13 +14,13 @@
 }
 
 .slide_01 .item.item_01 {
-  background-image: url("../images/slide_01.jpg");
+  background-image: url('../images/slide_01.jpg');
 }
 .slide_01 .item.item_02 {
-  background-image: url("../images/slide_02.jpg");
+  background-image: url('../images/slide_02.jpg');
 }
 .slide_01 .item.item_03 {
-  background-image: url("../images/slide_03.jpg");
+  background-image: url('../images/slide_03.jpg');
 }
 
 .slide_text {
@@ -33,7 +33,7 @@
 }
 
 .slide_text h2 {
-  font-family: "Days One", sans-serif;
+  font-family: 'Days One', sans-serif;
   font-size: 96px;
 }
 
@@ -62,6 +62,11 @@
 
 .arrows img {
   opacity: 0.6;
+  cursor: pointer;
+}
+
+.arrows img:hover {
+  opacity: 0.9;
 }
 
 /* slide_02 */
@@ -89,6 +94,24 @@
   font-size: 14px;
 }
 
+.slide_02 .slick-dots {
+  top: -50px !important;
+  width: initial;
+  right: 0;
+}
+
+.slide_02 .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  background-color: #000;
+  border-radius: 14px;
+  opacity: 0.2;
+}
+
+.slide_02 .slick-dots li.slick-active button {
+  opacity: 0.7;
+}
+
 /* section */
 .section {
   max-width: 1200px;
@@ -111,8 +134,7 @@
   color: var(--dark);
 }
 
-/* earth */
-.earth .title_box span {
+.section .title_box span {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -120,10 +142,11 @@
   color: var(--mid);
 }
 
-.earth .title_box span i {
+.section .title_box span i {
   padding-left: 10px;
 }
 
+/* earth */
 .earth .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -199,3 +222,13 @@
 }
 
 /* insta */
+.insta .cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.insta .cards img {
+  width: 100%;
+  display: block;
+}
