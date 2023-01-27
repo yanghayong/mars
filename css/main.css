@@ -112,40 +112,6 @@
   opacity: 0.7;
 }
 
-/* section */
-.section {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  margin-top: 80px;
-}
-
-.section .title_box {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.section .title_box h3 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-.section .title_box p {
-  color: var(--dark);
-}
-
-.section .title_box span {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 14px;
-  color: var(--mid);
-}
-
-.section .title_box span i {
-  padding-left: 10px;
-}
-
 /* earth */
 .earth .cards {
   display: grid;
