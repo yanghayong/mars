@@ -1,13 +1,21 @@
 $(function () {
-  $('.slide_01').slick({
-    autoplay: true,
-    nextArrow: $('.next'),
-    prevArrow: $('.prev'),
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 800) {
+      $('.gotop').fadeIn()
+    } else {
+      $('.gotop').fadeOut()
+    }
   })
 
-  $('.slide_02').slick({
-    autoplay: true,
-    dots: true,
-    fade: true,
+  $('.gotop').click(function () {
+    $('html').animate({ scrollTop: 0 }, 300)
+  })
+
+  $('.hamburger').on('click', function () {
+    $('.menu').addClass('on')
+  })
+
+  $('.close').on('click', function () {
+    $('.menu').removeClass('on')
   })
 })
