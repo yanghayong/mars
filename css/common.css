@@ -70,6 +70,7 @@ body {
   border: 1px solid #fff;
 }
 
+/* footer */
 .footer {
   margin-top: 130px;
   background-color: #f5f5f5;
@@ -77,7 +78,7 @@ body {
 }
 
 .footer .section {
-  padding: 40px 0 54px;
+  padding: 40px 15px 54px;
 }
 
 .bottom_header {
@@ -251,5 +252,150 @@ body {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   display: none;
-  z-index: 100;
+  z-index: 99;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  /* button */
+  .btns {
+    gap: 10px;
+    pointer-events: initial;
+  }
+
+  .btn {
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+  }
+
+  /* section */
+  .section {
+    padding: 0 12px;
+    margin-top: 36px;
+  }
+
+  .section .title_box {
+    margin-bottom: 18px;
+  }
+
+  .section .title_box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .section .title_box p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .section .title_box span {
+    bottom: initial;
+    top: 4px;
+    font-size: 11px;
+  }
+
+  /* header */
+  .header {
+    height: 60px;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logo {
+    margin-right: initial;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  /* gotop */
+  .gotop {
+    right: 12px;
+    bottom: 12px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  /* footer */
+  .footer {
+    margin-top: 60px;
+    font-size: 12px;
+  }
+
+  .footer .section {
+    padding: 30px 12px 40px;
+  }
+
+  .bottom_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+    margin-bottom: 30px;
+  }
+
+  .bottom_logo {
+    margin-right: 0;
+  }
+
+  .bottom_logo img {
+    width: 150px;
+  }
+
+  .sns {
+    position: initial;
+  }
+
+  .site_info {
+    line-height: 1.8;
+    margin-bottom: 26px;
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  /* menu */
+  .menu {
+    height: 100%;
+    padding: 60px 30px;
+    overflow: scroll;
+  }
+
+  .menu > ul {
+    display: initial;
+    position: initial;
+  }
+
+  .menu > ul > li {
+    width: initial;
+  }
+
+  .menu > ul > li > a {
+    font-size: 22px;
+    margin-bottom: 0;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .menu > ul > li > a::after {
+    display: none;
+  }
+
+  .close {
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+  }
 }

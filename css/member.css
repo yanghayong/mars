@@ -1,8 +1,14 @@
 /* member */
 .member {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   color: var(--dark);
+}
+
+.member li img {
+  width: 100%;
+  display: block;
 }
 
 .member h5 {
